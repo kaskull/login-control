@@ -1,0 +1,20 @@
+@import '../../../styles.scss';
+.clock {
+    &-col {
+      text-align: center;
+      margin-right: 20px;
+      margin-left: 20px;
+      min-width: 90px;
+      position: relative;
+      p{
+          color: $grey-color;
+      }
+    }
+    &-time {
+        font-size: 30px;
+      }
+    &-label {
+      margin-top: 10px;
+    }
+  }
+  

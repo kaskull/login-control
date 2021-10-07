@@ -1,0 +1,13 @@
+<div id="timer">
+  <header>
+    <h1>Welcome!</h1>
+    <p>The last time you accessed was</p>
+  </header>  
+  <div class="clock-container">
+    <login-control-clock [number]="days" label='days'></login-control-clock>
+    <login-control-clock [number]="hours" label='hours'></login-control-clock>
+    <login-control-clock [number]="minutes" label='minutes'></login-control-clock>
+    <login-control-clock [number]="seconds" label='seconds'></login-control-clock>
+  </div>
+  <button class="button-primary" (click)="onLogout()">Logout</button>
+</div>

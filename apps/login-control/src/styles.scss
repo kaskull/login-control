@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+// Variables
+$grey-color: #808080;
+$blue-color: #005b96;
+
+.button-primary {
+    margin: 0 auto;
+    display: block;
+    background-color: $blue-color;
+    border: none;
+    padding: 15px 90px 15px 90px;
+    color: white;
+    border-radius: 5px;
+  }

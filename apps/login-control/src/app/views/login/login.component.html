@@ -1,0 +1,12 @@
+<div id="login">
+  <div class="box">
+    <div class="imgwrap">
+      <img src="/assets/img/lock.png" alt="Smiley face">
+    </div>
+  </div>
+  <form [formGroup]="userForm" (ngSubmit)="formValidate()">
+    <input id="email" type="text" formControlName="email" placeholder="Email" />
+    <input id="password" type="password" formControlName="password" placeholder="Password" />
+    <button class="button-primary" type="submit" [disabled]="userForm.invalid">Crear</button>
+  </form>
+</div>
