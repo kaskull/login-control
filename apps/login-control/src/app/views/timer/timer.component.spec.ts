@@ -1,3 +1,5 @@
+import { HttpClientModule } from '@angular/common/http';
+import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
@@ -7,10 +9,15 @@ describe('TimerComponent', () => {
   let component: TimerComponent;
   let fixture: ComponentFixture<TimerComponent>;
 
+  @Component({
+    selector: 'login-control-clock',
+  })
+  class MockLoginControlClockComponent {}
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TimerComponent ],
-      imports: [ RouterTestingModule ]
+      declarations: [ TimerComponent, MockLoginControlClockComponent ],
+      imports: [ RouterTestingModule, HttpClientModule ]
     })
     .compileComponents();
   });

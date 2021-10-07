@@ -21,7 +21,7 @@ export class TimerService {
     return this.userData;
   }
 
-  updateUser(email: string, date: number){
+  updateUser(email: string, date: number){ 
     const result = this.http.post<any>(`${this.apiEndPoint}/updateUser`, {params:{email: email, date: date}});
     return result;
   }

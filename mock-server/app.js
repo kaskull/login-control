@@ -41,7 +41,7 @@ router.post('/updateUser', (request,response) => {
             return lastLogin
         }
       });
-    return response.status(200).json();
+    return response.status(200).json(LastLoginJson);
 });
 
 app.use("/", router);
