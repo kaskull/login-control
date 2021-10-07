@@ -7,6 +7,6 @@
   <form [formGroup]="userForm" (ngSubmit)="formValidate()">
     <input id="email" type="text" formControlName="email" placeholder="Email" />
     <input id="password" type="password" formControlName="password" placeholder="Password" />
-    <button class="button-primary" type="submit" [disabled]="userForm.invalid">Crear</button>
+    <button class="button-primary" type="submit" [disabled]="userForm.invalid">Log In</button>
   </form>
 </div>
